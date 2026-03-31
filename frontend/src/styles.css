@@ -1,0 +1,89 @@
+:root {
+  --cs-blue-900: #003a70;
+  --cs-blue-700: #0057a8;
+  --cs-blue-500: #0077d9;
+  --cs-blue-100: #eaf4ff;
+  --cs-white: #ffffff;
+  --cs-gray-700: #3d4b5c;
+  --cs-gray-100: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--cs-blue-100), var(--cs-white));
+  color: var(--cs-gray-700);
+}
+
+.app-shell {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  background: linear-gradient(120deg, var(--cs-blue-900), var(--cs-blue-500));
+  color: var(--cs-white);
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 87, 168, 0.22);
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.app-header p {
+  margin: 8px 0 0;
+  opacity: 0.95;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--cs-white);
+  border: 1px solid #d2e5fa;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0, 58, 112, 0.06);
+}
+
+.card h2 {
+  color: var(--cs-blue-700);
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+button {
+  background: var(--cs-blue-700);
+  color: var(--cs-white);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--cs-blue-900);
+}
+
+.kpi {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--cs-blue-100);
+  color: var(--cs-blue-900);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: 8px;
+}
